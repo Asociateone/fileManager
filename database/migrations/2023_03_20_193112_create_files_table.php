@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->id();
-            $table->string("original_name");
-            $table->string("extension");
-            $table->string("upload_name");
-            $table->foreignId("user_id")->constrained();
-            $table->string("password")->nullable();
+            $table->string('original_name');
+            $table->string('extension');
+            $table->string('upload_name');
+            $table->foreignId('user_id')->constrained();
+            $table->string('password')->nullable();
             $table->timestamps();
         });
     }
